@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-sm w-100 m-0  p-0  mx-lg-5 my-5">
+        <div class="row ms-lg-5">
+            <div class="col-lg-7 mx-lg-auto shadow">
+                <h1 class="text-center pt-3 text-primary">Welcome to Login Page</h1>
+                <ul class="nav nav-pills mt-5 me-1 pt-1">
+                    <li id="navlo" class="nav-item mx-auto w-25 text-center">
+                        <a href="" id="log1" class="nav-link active font-monospace " data-bs-toggle="pill" data-bs-target="#log" role="tab">LogIN</a>
+                    </li>
+                    <li id="navreg" class="nav-item w-25 mx-auto ms-1 text-center">
+                        <a href="#reg" id="nava" class="nav-link font-monospace" data-bs-toggle="pill" data-bs-target="#reg" role="tab">Register</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane show active fade" id="log">
+                        <form action="" method="" id="myForm">
+                            <div class="form-floating w-50 mx-auto">
+                                <input id="userName" type="text" class="form-control w-100 mt-5" placeholder="user">
+                                <label for="" class="text-muted">Enter Your Username </label>
+                                <span class="pb-0 mb-0" style="visibility: hidden;" id="nameErr">*Requied Field</span>
+                            </div>
+                            <div class="form-floating w-50 mx-auto">
+                                <input id="password" type="password" class="form-control w-100 mt-3" placeholder="user">
+                                <label for="" class="text-muted">Password</label>
+                                <span id="passErr" style="visibility: hidden;">*Requied Field</span>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-primary mt-4 w-25 mb-5" style="margin-left:37.5% ;">Log IN</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="reg">
+                        <form action="">
+                            <div class="form-floating w-50 mx-auto">
+                                <input type="text" class="form-control w-100 mt-5" placeholder="user">
+                                <label for="" class="text-muted">First Name</label>
+                            </div>
+                            <div class="form-floating w-50 mx-auto">
+                                <input type="text" class="form-control w-100 mt-5" placeholder="user">
+                                <label for="" class="text-muted">Last Name</label>
+                            </div>
+
+                            <div class="form-floating w-50 mx-auto">
+                                <input type="password" class="form-control w-100 mt-5" placeholder="user">
+                                <label for="" class="text-muted">Create Password</label>
+                            </div>
+                            <div class="form-floating w-50 mx-auto">
+                                <input type="password" class="form-control w-100 mt-5" placeholder="user">
+                                <label for="" class="text-muted">Confirm Password</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-primary mt-4 w-25 mb-5 " style="margin-left:37.5% ;">Create Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
